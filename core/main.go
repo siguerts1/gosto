@@ -48,6 +48,7 @@ func postAlbums(c *gin.Context) {
     // Add the new album to the slice.
     albums = append(albums, newAlbum)
     c.IndentedJSON(http.StatusCreated, newAlbum)
+    sqs_client.main(message, queueURL)
 }
 
 // getAlbumByID locates the album whose ID value matches the id
