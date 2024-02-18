@@ -3,6 +3,7 @@ package main
 import (
 	"net/http"
     "github.com/gin-gonic/gin"
+    "github.com/siguerts1/gosto/sqs_client"
 )
 
 // album represents data about a record album.
