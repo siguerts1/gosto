@@ -1,4 +1,4 @@
-package main
+package sqs_client
 
 import (
 	"fmt"
@@ -21,7 +21,7 @@ func pushMessageToSQS(messageBody string, queueURL string) error {
 	return nil
 }
 
-func push() {
+func main(){
 	defaultMessageBody := "Another request sent to the API"
 	defaultQueueURL := "http://sqs.us-east-1.localhost.localstack.cloud:4566/000000000000/main-queue"
 
