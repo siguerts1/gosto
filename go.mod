@@ -1,4 +1,4 @@
-module grace
+module gosto
 
 go 1.21.6
 
